@@ -1,0 +1,113 @@
+.home__main-section{
+    padding: 160px 0px;
+}
+
+.home__main-row{
+    align-items: center;
+
+}
+.row{
+    display: flex;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    margin-left: -15px;
+    /*Var olanları tek satıra sığdırmaya calisir*/
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.col{
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex:1;
+    max-width: 50%;
+    flex-basis:50%;
+
+}
+
+.home__main-text-wrapper{
+    max-width:540px;
+    padding-top: 0;
+    padding-bottom: 60px;
+}
+
+.top-line{
+    color: #395b75 ;
+    font-size:25px;
+    line-height: 16px;
+    /*Fontun kalınlık durumunu belirtir.*/
+    font-weight:700;
+    /*Harfler arası boşluk ayarlanır.*/
+    letter-spacing:1.4px;
+    margin-bottom:16px;
+
+}
+
+.heading{
+    margin-bottom: 24px;
+    font-size:38px;
+    line-height:1.1;
+    font-weight: 600;
+    color:#d8d8d9;
+}
+
+.dark{
+    color: #395b75;
+}
+.white{
+    color:#fff;
+}
+
+
+.darkBg {
+    background-color:#395b75 ;
+}
+
+.home__main-subtitle {
+    max-width: 440px;
+    margin-bottom: 35px;
+    font-size:18px;
+    line-height: 24px;
+}
+
+
+.home__main-img-wrapper{
+    max-width: 555px;
+}
+
+.home__main-img {
+    max-width: 95%;
+    margin : 0 0 0 10px;
+    padding-right: 0;
+
+}
+
+.img{
+    border:0;
+    max-width: 100%;
+    /*Container içinde dikey ortalama yapmak için kullanılır*/
+    vertical-align: middle;
+    display: inline-block;
+}
+/*Media özelliği tablet telefon gibi cihazların kullanımının artması ile
+sitenin dinamik olarak şekillenmesinde yarar*/
+/*Maksimum ekran genişliği 991px i aştığı an container yapılarında
+sağ taraflı ve sol taraflı iç boşluk 30 px olsun diye ayarlanır.*/
+@media screen and (max-width:991px){
+    .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width:768px){
+    .home__main-text-wrapper{
+        padding-bottom: 65px;
+    }
+
+    .col{
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}
+

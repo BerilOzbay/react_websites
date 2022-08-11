@@ -1,0 +1,130 @@
+:root {
+    --primary: #fff;
+    color:black;
+}
+
+.btn {
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border:none;
+    /*fare imlecinin linkte oldugu gibi el seklinde gözükmesine yarar.*/
+    cursor:pointer;
+    /*ogenin bos alanlarının nasıl kullanılacağı belirtilir.
+    nowrap etiketi ile metin br etiketi ile karşılaşıncaya kadar aynı satırda devam eder
+    */
+    white-space:nowrap;
+}
+
+.btn--primary{
+    background-color: var(--primary);
+    color: #242424;
+    border: 1px solid var(--primary);
+    
+}
+
+
+.btn--outline{
+    background-color: transparent;
+    color:  #fff;
+    padding:8px 20px;
+    border: 1px solid var(--primary);
+    /*belirli bir sure boyunca diger özellige sorunsuz sekilde geçilmesini saglar.*/
+    transition: all 0.3s ease-out;
+
+}
+
+.btn--medium{
+    padding:8px 20px;
+    font-size: 18px;
+}
+
+.btn--large{
+    padding: 12px 26px;
+    font-size: 20px;
+}
+
+.btn--mobile{
+    text-align: center;
+    border-radius:4px;
+    width: 80%;
+    /*Altının çizili olması ile alakalı.*/
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: #fff;
+    padding:10px 10px;
+    border: solid 1px #fff;
+    /*gecis efektini 3 saniye sure ile baslatır hızlandırır bir sonraki asamaya 
+    gecer*/
+    transition: all 0.3s ease-out;
+}
+
+.btn--wide{
+    padding: 12px 64px;
+    font-size: 20px;
+}
+/*hover uygulanan kısımlarda degisikler gösterilir.
+ustune gelince mavi olsun gibi*/
+.btn--large:hover, .btn--medium:hover, .btn--mobile:hover{
+    transition: all 0.3s ease;
+    background: #fff;
+    color: #242424;
+}
+
+.btn--wide:hover{
+    color: #fff;
+    background-color: #09a0eb;
+    transition:all 0.2 ease-out;
+}
+
+.blue{
+    background-color: #79d1f4 ;
+    color:#fff;
+    border: none;
+}
+.pink{
+    background-color: #cd7dae ;
+    color:#fff;
+    border: none;
+}
+
+.red{
+    background-color: #f00946 ;
+    color:#fff;
+    border: none;
+}
+.primary{
+    background-color: #242424 ;
+    color:#fff;
+    border: none;
+}
+.primary:hover{
+    background-color: #fff ;
+    color:#242424;
+    border: none;
+}
+.green{
+    background-color: #25ce4a ;
+    color:#fff;
+    border: none;
+}
+.green:hover{
+    background-color: #242424;
+}
+
+.btn-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 8px 16px;
+    height: 100%;
+    width: 100%;
+    color:#242424
+}
+
+.soyut{
+   display: none;
+}
+
