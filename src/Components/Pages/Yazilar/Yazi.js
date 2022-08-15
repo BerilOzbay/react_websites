@@ -1,24 +1,37 @@
-import React from 'react'
-import WritingSection from '../../WritingSection'
-import { yaziBir,yaziIki,yaziUc,yaziDort } from './Data'
-import '../../WritingSection.css'
-
+import React ,{useEffect, useState} from 'react'
+import {Link} from 'react-router-dom'
+import './Yazi.css'
 
 function Yazi() {
+  const [yazi,setYazi] = useState([]);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+    .then((res) => res.json())
+    .then((data) => setYazi(data));
+  },[]);
 
   return (
     <>
-      <div className='cards'>
-        <div className='cards__container'>
-          <div className='cards__wrapper'>
-            <ul className='cards__items'>
-              <WritingSection {...yaziBir}/>
-              <WritingSection {...yaziIki}/>
-              </ul>
-          </div>
+    <h2 className='baslik'>Yazilar</h2>
+    <div className='yazi'>
+      <ul className='yazi_container'>
+    {
+      yazi.map((yazi)=> (
+        <div className='yazi_cards'>
+        <li key={yazi.id}>
+        <figure className="cards__item__pic-wrap">
+          <img src='/images/2203_w026_n002_1540b_p1_1540.jpg' alt='deneme' className="cards__item__img" />
+        </figure>
+        <Link to={`${yazi.id}`}>{yazi.title}</Link>
+        </li>
         </div>
-      </div>
+      ))
+    }
+    </ul>
+    </div>
     </>
+    
   )
 }
 

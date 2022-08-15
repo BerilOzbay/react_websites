@@ -9,6 +9,7 @@ import Contact from './Components/Pages/Contact/Contact';
 import Giris from './Components/Pages/Giris/Giris'
 import Yazi from './Components/Pages/Yazilar/Yazi'
 import ScrollToTop from './Components/ScrollToTop';
+import YaziDetay from './Components/Pages/Yazilar/YaziDetay';
 function App() {
   return (
     <Router>
@@ -19,7 +20,8 @@ function App() {
         <Route path='/AboutMe' element={<AboutMe/>} />
         <Route path='/Contact' element={<Contact/>} />
         <Route path='/GirisYap' element={<Giris/>} />
-        <Route path='Yazilar'   element={<Yazi/>}/>
+        <Route path='/Yazilar'   element={<Yazi/>}/>
+        <Route path='/Yazilar/:id'   element={<YaziDetay/>}/>
       </Routes>
       <Footer/>
     </Router>
