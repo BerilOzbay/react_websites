@@ -41,7 +41,7 @@ export const AboutMeTwo = {
     description: 
     <ul> 
     <li> Uludag Universitesi - Bilgisayar Muhendisligi 2019-2023</li>
-    <li> Gazi Universitesi - Endustriyel Tasarım 2017-2019</li>
+    <li> Gazi Universitesi - Endustriyel Tasarim 2017-2019</li>
     <li> Gazi Universitesi - Ingilizce Hazirlik-2016-2017 </li>
     <li> Ulubatli Hasan Anadolu Lisesi-2012-2016</li>
     </ul>,

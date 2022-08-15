@@ -5,8 +5,21 @@
 .baslik {
     margin-left: 230px;
     margin-top: 120px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 35px;
+    color:#395b75;
+}
+
+.yaziButton{
+    margin-left:230px;
+    height:50px;
+    background-color:#506d84;
+    color:#fff;
+    border-color:transparent;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 17px;
 }
 
 .yazi_container {
@@ -86,6 +99,10 @@ ul {
     .yazi_cards{
         min-width: 230px;
         font-size: 17px;
+    }
+
+    .yaziButton{
+        margin-left: 20%;
     }
 
 }
