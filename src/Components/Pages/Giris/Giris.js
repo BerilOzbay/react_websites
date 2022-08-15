@@ -21,7 +21,7 @@ function Giris() {
         />
         </div>
 
-        <div className='girisInput'>
+        <div>
         <label  className='girisLabel'> Sifre:</label>
         <input
         className='girisInput'

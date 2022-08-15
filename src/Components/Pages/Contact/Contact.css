@@ -1,10 +1,11 @@
-.baslik{
-    margin:25px 0px 0px 130px;
-    padding-top:20px;
-    font-size:30px;
-    color:#395b75;
-    display: flex;
-    flex-direction: column;
+.contactBaslik{
+  padding-top:20px;
+  font-size:30px;
+  color:#395b75;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin:20px 0px 0px 130px;
 }
 
 .form{
@@ -63,14 +64,13 @@
 }
 
 @media screen and (max-width: 960px){
-  .baslik{
-    transform: scale(80%);
-    margin-left: 40%;
+  .contactBaslik{
+    transform: scale(90%);
     
   }
 
   .contact-row{
-    transform: scale(80%);
+    transform: scale(90%);
   }
 
   .form{

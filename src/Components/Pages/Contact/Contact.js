@@ -26,7 +26,7 @@ function Contact() {
 
   return (
     <>
-    <div className='baslik'>Iletisim</div>
+    <div className='contactBaslik'>Iletisim</div>
     <div className='row contact-row'>
       
       <form onSubmit={formik.handleSubmit} className="form">
