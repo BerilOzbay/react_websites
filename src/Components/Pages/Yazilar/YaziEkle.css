@@ -1,0 +1,99 @@
+.write{
+    padding-top: 100px;
+}
+
+.writeImg{
+    margin-left: 15%;
+    width:70vw;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: solid 2px;
+    border-style: dashed;
+    border-color:rgba(50, 78, 99, 0.356) ;
+}
+
+.writeForm{
+    position: relative;
+}
+
+
+.writeFormGroup{
+    margin-left: 11.5%;
+    display: flex;
+    align-items: center;
+    margin-top:20px;
+}
+.writeInput{
+    font-size:25px;
+    padding:10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 70vw;
+    border-color:rgba(50, 78, 99, 0.356);
+    border-style: dotted;
+}
+
+
+.writeText{
+    font-size: 18px;
+    margin-left:3.5%;
+    margin-bottom: 50px;
+    height: 100vh;
+    width: 70vw;
+    border-color:rgba(50, 78, 99, 0.356) ;
+    border-style: dotted;
+    padding-left: 5px;
+    padding-top: 5px;
+
+}
+
+.writeIcon{
+    transform: scale(200%);
+    margin:10px;
+    padding-right: 15px;
+    color: #79d1f4;
+    cursor: pointer;
+}
+
+.writeSubmit{
+    display: flex;
+    margin:0px auto 150px auto;
+    padding-left:10px;
+    padding-top:5px;
+    left:1300px;
+    color: #fff;
+    background-color: #79d1f4;
+    border-color: transparent;
+    border-radius: 3px;
+    height: 50px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.writeSubmit:hover{
+    transition: all 0.3s ease;
+    background: #fff;
+    color: #242424;
+    border: solid 1px #242424;
+}
+
+@media screen and (max-width: 960px){
+    .writeInput{
+      transform: scale(80%); 
+    }
+
+    .writeIcon{
+        color: #79d1f4;
+        cursor: pointer;
+        margin:0px;
+        padding:0px;
+    }
+    .writeSubmit{
+        transform: scale(80%);
+        right: 10px;
+    }
+  
+  }
+

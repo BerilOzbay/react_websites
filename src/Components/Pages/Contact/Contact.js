@@ -21,7 +21,7 @@ function Contact() {
       ).then(res => {
         console.log(res);
         formik.resetForm();
-      }).catch(err => window.alert)
+      }).catch(err => window.alert(err))
 
   }
 
@@ -33,8 +33,6 @@ function Contact() {
   })
 
  
- 
-
   return (
     <>
       <div className='contactBaslik'>Iletisim</div>
@@ -102,7 +100,7 @@ function Contact() {
               formik.errors.message && formik.touched.message && <div className='errors'>{formik.errors.message}</div>
             }
           </div>
-          <button type="submit" className="contactButton" disabled={formik.values.email.length>15 && formik.values.message.length>15} >
+          <button type="submit" className="contactButton" disabled={formik.isSubmitting} >
             Gonder
           </button>
 

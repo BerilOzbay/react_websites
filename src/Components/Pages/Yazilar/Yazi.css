@@ -13,13 +13,20 @@
 .yaziButton{
     margin-left:230px;
     height:50px;
-    background-color:#506d84;
+    background-color:#79d1f4;
     color:#fff;
     border-color:transparent;
     border-radius: 5px;
     width: 150px;
     cursor: pointer;
     font-size: 17px;
+}
+
+.yaziButton:hover{
+    transition: all 0.3s ease;
+    background: #fff;
+    color: #242424;
+    border:solid 1px #242424;
 }
 
 .yazi_container {

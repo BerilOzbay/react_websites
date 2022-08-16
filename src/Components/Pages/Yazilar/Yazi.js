@@ -14,7 +14,9 @@ function Yazi() {
   return (
     <>
     <h2 className='baslik'>Yazilar</h2>
+    <Link to='/YaziEkle'>
     <button type='submit' className='yaziButton'>Yeni Yazi Ekle</button>
+    </Link>
     <div className='yazi'>
       <ul className='yazi_container'>
     {
